@@ -10,7 +10,7 @@ public class Solution
 
         foreach (string row in bank)
         {
-            int numberOfLaserDevicesOnCurrentRow = countLaserDevicesOnRow(row);
+            int numberOfLaserDevicesOnCurrentRow = CountLaserDevicesOnRow(row);
             if (numberOfLaserDevicesOnCurrentRow > 0)
             {
                 totalNumberOfLaserBeams += numberOfLaserDevicesOnPreviousRow * numberOfLaserDevicesOnCurrentRow;
@@ -21,7 +21,7 @@ public class Solution
         return totalNumberOfLaserBeams;
     }
 
-    private int countLaserDevicesOnRow(string row)
+    private int CountLaserDevicesOnRow(string row)
     {
         int numberOfLaserDevicesOnRow = 0;
         foreach (char current in row)
